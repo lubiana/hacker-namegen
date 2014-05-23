@@ -64,7 +64,13 @@ THE SOFTWARE.
       'v01d',
       'pr0xy',
       'pr0',
-      'XpL0i7'
+      'XpL0i7',
+      'sh4d0w',
+      'cYb3r',
+      't0xic',
+      'r0gue',
+      'liQuiD',
+      't0xIc'
     );
 
     $data['suffix'] = array(
@@ -79,7 +85,13 @@ THE SOFTWARE.
       'phr33keR',
       'fuZZ3r',
       'cr4ck0r',
-      'bre4ch'
+      'bre4ch',
+      'wire',
+      'd3str0yer',
+      'l3g3nd',
+      'overdrive',
+      'ph4nt0m',
+      'skeleton'
     );
     $data['lastNicks'] = array();
 
