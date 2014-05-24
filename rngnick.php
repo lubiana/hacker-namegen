@@ -67,9 +67,9 @@ THE SOFTWARE.
       'XpL0i7',
       'sh4d0w',
       'cYb3r',
-      't0xic',
       'r0gue',
       'liQuiD',
+      'n1ght',
       't0xIc'
     );
 
@@ -91,7 +91,8 @@ THE SOFTWARE.
       'l3g3nd',
       'overdrive',
       'ph4nt0m',
-      'skeleton'
+      'skeleton',
+      'kn1ght'
     );
     $data['lastNicks'] = array();
 
