@@ -1,3 +1,4 @@
+#!/usr/bin/php5
 <?php
 /*
 GOATSE PUBLIC LICENSE (GPL)
