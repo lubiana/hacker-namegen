@@ -108,7 +108,7 @@ THE SOFTWARE.
   echo get_rand($prefix) . '-' . get_rand($suffix);
   
   function get_rand($input_array) {
-    return $input_array[rand(count($input_array) -1)];
+    return $input_array[rand(0, count($input_array) -1)];
   }
 
 ?>
