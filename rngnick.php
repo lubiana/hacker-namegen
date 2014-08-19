@@ -49,83 +49,53 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
 */
 
-  $dataFile = '/tmp/rngnick.data';
 
-  if(!file_exists($dataFile)) {
-    $data['prefix'] = array(
-      'l33t',
-      'f1r3w4ll',
-      'b4ckd00r',
-      'ascii',
-      'h3x',
-      'b1n4ry',
-      'fuZz13',
-      'm41nfRam3',
-      's1l3nt',
-      'v01d',
-      'pr0xy',
-      'pr0',
-      'm3t4',
-      'XpL0i7',
-      'sh4d0w',
-      'cYb3r',
-      'r0gue',
-      'liQuiD',
-      'n1ght',
-      't0xIc'
-    );
+  $prefix = array(
+    'l33t',
+    'f1r3w4ll',
+    'b4ckd00r',
+    'ascii',
+    'h3x',
+    'b1n4ry',
+    'fuZz13',
+    'm41nfRam3',
+    's1l3nt',
+    'v01d',
+    'pr0xy',
+    'pr0',
+    'm3t4',
+    'XpL0i7',
+    'sh4d0w',
+    'cYb3r',
+    'r0gue',
+    'liQuiD',
+    'n1ght',
+    't0xIc'
+  );
 
-    $data['suffix'] = array(
-      'h4xx0r',
-      'sn34k3R',
-      'f4k0R',
-      'pUnK',
-      'cr4sH',
-      'pl4y0r',
-      'cYph0r',
-      'dA3m0n',
-      'phr33keR',
-      'fuZZ3r',
-      'cr4ck0r',
-      'bre4ch',
-      'wire',
-      'd3str0yer',
-      'l3g3nd',
-      'overdrive',
-      'ph4nt0m',
-      'skeleton',
-      'kn1ght'
-    );
-    $data['lastNicks'] = array();
+  $suffix = array(
+    'h4xx0r',
+    'sn34k3R',
+    'f4k0r',
+    'pUnK',
+    'cr4sH',
+    'pl4y0r',
+    'cYph0r',
+    'dA3m0n',
+    'phr33keR',
+    'fuZZ3r',
+    'cr4ck0r',
+    'bre4ch',
+    'w1re',
+    'd3str0yer',
+    'l3g3nd',
+    '0v3rdr1v3',
+    'ph4nt0m',
+    'sk3let0n',
+    'kn1ght'
+  );
 
-    file_put_contents($dataFile, json_encode($data));
-
-  } else {
-   $data = json_decode(file_get_contents($dataFile), true);
-  }
-
-  while(count($data['lastNicks']) > 8)
-    array_shift($data['lastNicks']);
-  
-  $prefix = genNick($data['prefix'], $data['lastNicks']);
-  $suffix = genNick($data['suffix'], $data['lastNicks']);
-  
-  function genNick($data, $lastNicks) {
-    do {
-      $output = $data[rand(0, count($data) -1)];
-    } while(in_array($output, $lastNicks));
-    return $output;
-  }
-
-  $data['lastNicks'][] = $prefix;
-  $data['lastNicks'][] = $suffix;
-
-
-  file_put_contents($dataFile, json_encode($data));
-
-  echo $prefix . '-' . $suffix;
-
-
+  echo get_rand($prefix) . '-' . get_rand($suffix);
   
   function getRand($inputArray) {
     return $inputArray[rand(count($inputArray) -1)];
