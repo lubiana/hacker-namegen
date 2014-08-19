@@ -75,6 +75,8 @@ THE SOFTWARE.
     'd4rk',
     'r3d',
     'blu3',
+    'c001',
+    'c01d',
     'li9ht'
   );
 
@@ -99,7 +101,6 @@ THE SOFTWARE.
     'sk3let0n',
     'kn1ght',
     '0verr1de',
-    'c001',
     'shad0w',
     'bu11',
     'phr34k'
