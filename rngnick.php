@@ -70,7 +70,12 @@ THE SOFTWARE.
     'r0gue',
     'liQuiD',
     'n1ght',
-    't0xIc'
+    't0xIc',
+    'zer0',
+    'd4rk',
+    'r3d',
+    'blu3',
+    'li9ht'
   );
 
   $suffix = array(
@@ -92,7 +97,12 @@ THE SOFTWARE.
     '0v3rdr1v3',
     'ph4nt0m',
     'sk3let0n',
-    'kn1ght'
+    'kn1ght',
+    '0verr1de',
+    'c001',
+    'shad0w',
+    'bu11',
+    'phr34k'
   );
 
   echo get_rand($prefix) . '-' . get_rand($suffix);
